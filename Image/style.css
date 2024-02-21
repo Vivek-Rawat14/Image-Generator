@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+h1{
+  margin: 12px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
+}
+
+body {
+  background-color: rgb(248, 244, 244);
+}
+
+.userinput {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+
+#user_input {
+  width: 400px;
+  height: 40px;
+  border-radius: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  text-align: center;
+}
+
+#submit {
+  color: aliceblue;
+  background-color: rgb(115, 81, 146);
+  width: 40px;
+  margin-left: 4px;
+  border-radius: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  text-align: center;
+}
+
+#phto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#showmore {
+  display: none;
+  height: 45px;
+  width: 160px;
+  border-radius: 9px;
+  background-color: chartreuse;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
